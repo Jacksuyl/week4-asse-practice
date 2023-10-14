@@ -24,7 +24,7 @@ function filterUserProfiles(users, filter) {
   // Your code here
   const filteredNames = [];
 
-  for (const user of users) {
+  for (let user of users) {
     if (filter(user)) {
       filteredNames.push(user.name);
     }

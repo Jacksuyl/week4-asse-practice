@@ -17,11 +17,11 @@ You may not use Array's `map()`, `filter()`, or `forEach()` methods.
 
 function pickyMyMap(arr, cb) {
 	// Your code here
-	const result = [];
+	let result = [];
 
 	for (let i = 0; i < arr.length; i++) {
-	  const element = arr[i];
-	  const mappedValue = cb(element);
+	  let element = arr[i];
+	  let mappedValue = cb(element);
 
 	  if (mappedValue) {
 		result.push(mappedValue);
