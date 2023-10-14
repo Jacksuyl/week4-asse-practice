@@ -20,8 +20,14 @@ console.log(clothesList); // ['tshirt', 'pants']
 ***********************************************************************/
 
 function shoppingList(list) {
-  // Your code here 
-}
+  // Your code here
+
+    return function(item) {
+      list.push(item);
+      return list;
+    };
+  }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = shoppingList;

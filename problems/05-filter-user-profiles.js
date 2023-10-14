@@ -21,7 +21,16 @@ filterUserProfiles(facebookUsers, (user) => user.state === "New York"); // ["Mik
 ***********************************************************************/
 
 function filterUserProfiles(users, filter) {
-  // Your code here 
+  // Your code here
+  const filteredNames = [];
+
+  for (const user of users) {
+    if (filter(user)) {
+      filteredNames.push(user.name);
+    }
+  }
+
+  return filteredNames;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
